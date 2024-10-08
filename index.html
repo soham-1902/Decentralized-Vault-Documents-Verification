@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: purple;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="form">
+    <h2>Hello there, welcome back</h2>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <button type="submit">Sign In</button>
+  </div>
+
+  <div class="form">
+    <h2>Get on Board</h2>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Sign Up</button>
+  </div>
+</div>
+
+</body>
+</html>
